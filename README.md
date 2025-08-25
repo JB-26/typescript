@@ -2,8 +2,8 @@ Following a tutorial on TypeScript.
 
 https://www.youtube.com/watch?v=d56mG7DezGs
 
-Timestamp:
-Current URL:
+Timestamp: 23:30
+Current URL: https://youtu.be/d56mG7DezGs?t=1410
 
 TS (JS with type checking) is created by Microsoft to address the shortcomings of JS.
 Benefits:
