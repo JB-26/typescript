@@ -142,8 +142,9 @@ function greet(name: string | null) {
 // but you cannot pass undefined
 greet(null);
 
+// birthday property is now optional
 type Customer = {
-  brithday: Date;
+  brithday?: Date;
 };
 
 function getCustomer(id: number): Customer | null | undefined {
@@ -151,5 +152,15 @@ function getCustomer(id: number): Customer | null | undefined {
 }
 
 let customer = getCustomer(1);
-// optional property access operator
-console.log(customer?.brithday);
+// optional property access operator - ?
+// will only return a value if it exists
+console.log(customer?.brithday?.getFullYear());
+
+// optional element access operator
+// customers?.[0]
+
+// optional call
+let log: any = null;
+// this will only be called if log is referencing an actual function
+// otherwise undefined
+log?.("a");
